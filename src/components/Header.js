@@ -1,60 +1,89 @@
 import React from "react";
-import { AppBar, IconButton, makeStyles, Toolbar } from "@material-ui/core";
+import { useEffect, useState } from "react";
+import {
+  AppBar,
+  Collapse,
+  IconButton,
+  makeStyles,
+  Toolbar,
+} from "@material-ui/core";
 import SortIcon from "@material-ui/icons/Sort";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Link as Scroll } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
-  root:{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh',
-      fontFamily: 'Nunito'
+  root: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    fontFamily: "Nunito",
   },
-  
-    appbar: {
+
+  appbar: {
     background: "none",
-    
   },
-  appbarWrapper:{
-    width: '80%',
-    margin: '0 auto'
+  appbarWrapper: {
+    width: "80%",
+    margin: "0 auto",
   },
-  appbarTitle:{
-      flexGrow: "1",
+  appbarTitle: {
+    flexGrow: "1",
   },
   icon: {
-      color: '#fff',
-      fontSize: '2rem',
+    color: "#fff",
+    fontSize: "2rem",
   },
   container: {
-    textAlign: 'center',
+    textAlign: "center",
   },
   textColor: {
-      color: "#5AFF3C"
+    color: "#5AFF3C",
   },
   title: {
-      color:' #fff',
-      fontSize: '4.5rem'
-
-  }
+    color: " #fff",
+    fontSize: "4.5rem",
+  },
+  goDown: {
+    color: "#5AFF3D",
+    fontSize: "4em",
+  },
 }));
 export default function Header() {
   const classes = useStyles();
+  const [checked, setChecked] = useState(false);
+  useEffect(() => {
+    setChecked(true);
+  }, []);
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
-          <Toolbar className={classes.appbarWrapper}>
-        <h1 className={classes.appbarTitle}>My <span className={classes.textColor}>Island.</span></h1>
-        <IconButton>
-          <SortIcon className={classes.icon} />
-        </IconButton>
+        <Toolbar className={classes.appbarWrapper}>
+          <h1 className={classes.appbarTitle}>
+            My <span className={classes.textColor}>Island.</span>
+          </h1>
+          <IconButton>
+            <SortIcon className={classes.icon} />
+          </IconButton>
         </Toolbar>
       </AppBar>
-      <div className={classes.container}>
+      <Collapse
+        in={checked}
+        {...(checked ? { timeout: 1000 } : {})}
+        collapsedHeight={50}
+      >
+        <div className={classes.container}>
           <h1 className={classes.title}>
-              Welcome to <br /> My <span className={classes.textColor}>Island.</span>
+            Welcome to <br /> My{" "}
+            <span className={classes.textColor}>Island.</span>
           </h1>
-      </div>
+          <Scroll to="place-to-visit" smooth={true}>
+            <IconButton>
+              <ExpandMoreIcon className={classes.goDown} />
+            </IconButton>
+          </Scroll>
+        </div>
+      </Collapse>
     </div>
   );
 }

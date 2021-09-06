@@ -1,6 +1,7 @@
 import React from 'react'
 import { CssBaseline, makeStyles } from '@material-ui/core'
 import Header from './components/Header'
+import PlaceToVisit from './components/PlaceToVisit'
 
 
 
@@ -20,6 +21,7 @@ export default function App() {
     <div className={classes.root}>
       <CssBaseline />
       <Header />
+      <PlaceToVisit />
     </div>
   )
 }
