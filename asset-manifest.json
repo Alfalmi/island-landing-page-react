@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Alfalmi/island-landing-page-react/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Alfalmi/island-landing-page-react/static/js/main.1cfe765c.chunk.js",
-    "main.js.map": "/Alfalmi/island-landing-page-react/static/js/main.1cfe765c.chunk.js.map",
-    "runtime-main.js": "/Alfalmi/island-landing-page-react/static/js/runtime-main.9429c834.js",
-    "runtime-main.js.map": "/Alfalmi/island-landing-page-react/static/js/runtime-main.9429c834.js.map",
-    "static/js/2.cb8d1a80.chunk.js": "/Alfalmi/island-landing-page-react/static/js/2.cb8d1a80.chunk.js",
-    "static/js/2.cb8d1a80.chunk.js.map": "/Alfalmi/island-landing-page-react/static/js/2.cb8d1a80.chunk.js.map",
-    "static/js/3.9cc2f54e.chunk.js": "/Alfalmi/island-landing-page-react/static/js/3.9cc2f54e.chunk.js",
-    "static/js/3.9cc2f54e.chunk.js.map": "/Alfalmi/island-landing-page-react/static/js/3.9cc2f54e.chunk.js.map",
-    "index.html": "/Alfalmi/island-landing-page-react/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/Alfalmi/island-landing-page-react/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.cb8d1a80.chunk.js.LICENSE.txt": "/Alfalmi/island-landing-page-react/static/js/2.cb8d1a80.chunk.js.LICENSE.txt"
+    "main.css": "/island-landing-page-react/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/island-landing-page-react/static/js/main.10252c46.chunk.js",
+    "main.js.map": "/island-landing-page-react/static/js/main.10252c46.chunk.js.map",
+    "runtime-main.js": "/island-landing-page-react/static/js/runtime-main.045b927a.js",
+    "runtime-main.js.map": "/island-landing-page-react/static/js/runtime-main.045b927a.js.map",
+    "static/js/2.cb8d1a80.chunk.js": "/island-landing-page-react/static/js/2.cb8d1a80.chunk.js",
+    "static/js/2.cb8d1a80.chunk.js.map": "/island-landing-page-react/static/js/2.cb8d1a80.chunk.js.map",
+    "static/js/3.9cc2f54e.chunk.js": "/island-landing-page-react/static/js/3.9cc2f54e.chunk.js",
+    "static/js/3.9cc2f54e.chunk.js.map": "/island-landing-page-react/static/js/3.9cc2f54e.chunk.js.map",
+    "index.html": "/island-landing-page-react/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/island-landing-page-react/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.cb8d1a80.chunk.js.LICENSE.txt": "/island-landing-page-react/static/js/2.cb8d1a80.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9429c834.js",
+    "static/js/runtime-main.045b927a.js",
     "static/js/2.cb8d1a80.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.1cfe765c.chunk.js"
+    "static/js/main.10252c46.chunk.js"
   ]
 }
