@@ -1,5 +1,7 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core'
+import { CssBaseline, makeStyles } from '@material-ui/core'
+import Header from './components/Header'
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -16,7 +18,8 @@ export default function App() {
   return (
    
     <div className={classes.root}>
-      
+      <CssBaseline />
+      <Header />
     </div>
   )
 }
